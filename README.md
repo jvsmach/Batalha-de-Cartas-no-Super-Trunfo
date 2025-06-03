@@ -1,6 +1,6 @@
 # Super Trunfo - Países
 
-Este programa em C implementa o cadastro e a comparação de cartas no jogo "Super Trunfo" com tema de países e cidades, conforme o desafio proposto pela MateCheck.
+Este programa em C implementa o cadastro e a comparação de cartas no jogo "Super Trunfo" com tema de países e cidades, conforme o desafio proposto.
 
 No **Nível Mestre**, o programa:
 
