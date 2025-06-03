@@ -1,4 +1,4 @@
-# Super Trunfo - Países | Nível Mestre
+# Super Trunfo - Países
 
 ## Descrição
 
