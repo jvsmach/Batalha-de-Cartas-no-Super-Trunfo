@@ -29,7 +29,7 @@ O programa não utiliza estruturas de repetição ou condicionais (`for`, `while
 
 ## Como usar
 
-- Compile o programa com um compilador C, por exemplo:
+Compile o programa com um compilador C, por exemplo:
 
    bash
   
