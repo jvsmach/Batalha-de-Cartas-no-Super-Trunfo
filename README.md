@@ -20,12 +20,6 @@ No **Nível Mestre**, o programa:
 
 O programa não utiliza estruturas de repetição ou condicionais (`for`, `while`, `if`, `else`), atendendo às especificações do desafio.
 
-## Observações
-- O programa considera que todos os dados informados são válidos e não realiza validação de entrada
-- A fórmula do "Super Poder" inclui o inverso da densidade populacional para equilibrar seu impacto
-- A comparação das cartas é feita diretamente usando expressões lógicas, sem comandos condicionais explícitos.
-
----
 
 ## Como usar
 
@@ -43,6 +37,11 @@ O programa não utiliza estruturas de repetição ou condicionais (`for`, `while
   - PIB (número decimal)
   - Número de pontos turísticos (inteiro)
 - O programa exibirá os resultados da comparação dos atributos e o "Super Poder" de cada carta, indicando qual carta venceu em cada atributo (1 para Carta 1 e 0 para Carta 2).
+
+## Observações
+- O programa considera que todos os dados informados são válidos e não realiza validação de entrada
+- A fórmula do "Super Poder" inclui o inverso da densidade populacional para equilibrar seu impacto
+- A comparação das cartas é feita diretamente usando expressões lógicas, sem comandos condicionais explícitos.
 
 
 
