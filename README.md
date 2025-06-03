@@ -1,4 +1,4 @@
-# Super Trunfo das Cidades – Nível Avançado
+# Super Trunfo das Cidades
 
 Este programa em C simula um jogo de cartas do tipo "Super Trunfo", onde cada carta representa uma cidade com atributos numéricos. No nível avançado, foram adicionadas funcionalidades como o cálculo do **Super Poder** da cidade e a **comparação entre cartas**.
 
@@ -36,7 +36,7 @@ Use um compilador C, como `gcc`, para compilar o programa:
 gcc super_trunfo_avancado.c -o super_trunfo
 
 ```bash
-./super_trunfo
+./super_trunfo```
 
 **## Observações**
 - Observações
