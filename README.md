@@ -33,7 +33,7 @@ O programa não utiliza estruturas de repetição ou condicionais (`for`, `while
 
 - Compile o programa com um compilador C, por exemplo:
 
-   ```bash
+   bash
    gcc -o supertrunfo mestre_supertrunfo.c
 ./supertrunfo
 
@@ -44,3 +44,25 @@ O programa não utiliza estruturas de repetição ou condicionais (`for`, `while
 - PIB (número decimal)
 - Número de pontos turísticos (inteiro)
 - O programa exibirá os resultados da comparação dos atributos e o "Super Poder" de cada carta, indicando qual carta venceu em cada atributo (1 para Carta 1 e 0 para Carta 2).
+
+- Cadastro da Carta 1:
+Populacao: 1000000
+Area: 250.5
+PIB: 50000.0
+Numero de pontos turisticos: 15
+
+Cadastro da Carta 2:
+Populacao: 1200000
+Area: 300.0
+PIB: 48000.0
+Numero de pontos turisticos: 10
+
+Comparacao dos atributos (1 = Carta 1 vence, 0 = Carta 2 vence):
+Populacao: 0
+Area: 0
+PIB: 1
+Numero de pontos turisticos: 1
+Densidade Populacional: 1
+PIB per Capita: 1
+Super Poder: 1
+
