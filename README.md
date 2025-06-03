@@ -40,5 +40,5 @@ Use um compilador C, como `gcc`, para compilar o programa:
 ```bash
 gcc super_trunfo_avancado.c -o super_trunfo
 
-```bash
 ./super_trunfo
+
