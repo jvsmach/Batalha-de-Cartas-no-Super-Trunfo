@@ -1,77 +1,50 @@
-Super Trunfo das Cidades – Nível Intermediário
-Este projeto é um programa em linguagem C que simula o cadastro de cartas de cidades brasileiras para um jogo estilo Super Trunfo. 
-Ele permite ao usuário inserir dados de duas cidades e calcula automaticamente métricas importantes, como densidade populacional e PIB per capita.
+Super Trunfo das Cidades
+Nível Avançado
+
+Este programa em C simula um jogo de cartas do tipo "Super Trunfo", onde cada carta representa uma cidade com atributos numéricos. No nível avançado, foram adicionadas novas funcionalidades como o cálculo do "Super Poder" da cidade e a comparação entre cartas.
 
 Funcionalidades
 
-Cadastro de duas cartas contendo:
-Estado (letra de A a H)
-Código da carta (ex: A01)
-Nome da cidade
-População
-Área da cidade (em km²)
-PIB (em bilhões de reais)
-Número de pontos turísticos
+Leitura dos dados de duas cartas com os seguintes atributos:
+Estado (caractere)
+Código (string)
+Nome da cidade (string)
+População (unsigned long int)
+Área (float)
+PIB em bilhões de reais (float)
+Número de pontos turísticos (int)
 
-Cálculos automáticos:
-Densidade Populacional = População / Área
-PIB per Capita = (PIB × 1.000.000.000) / População
-Exibição formatada dos dados cadastrados, incluindo as métricas calculadas com duas casas decimais
+Cálculo automático de:
+Densidade populacional (hab/km²)
+PIB per capita (R$ por habitante)
+Super Poder da carta (soma ponderada dos atributos)
 
-Conceitos aplicados
-Leitura e formatação de dados com scanf e printf
-Manipulação de strings e números em C
-Cálculo de métricas populacionais e econômicas
+Comparação entre as cartas com base nos atributos:
+População, área, PIB, pontos turísticos, PIB per capita e Super Poder: vence quem tiver o maior valor
 
-Organização e legibilidade de código para fins educacionais.
+Densidade populacional: vence quem tiver o menor valor
 
-Exemplo de Saída
-yaml
-Copiar
-Editar
-=== Carta 1 ===
-Estado: A
-Código: A01
-Nome da Cidade: São Paulo
-População: 12325000
-Área: 1521.11 km²
-PIB: 699.28 bilhões de reais
-Número de Pontos Turísticos: 50
-Densidade Populacional: 8102.47 hab/km²
-PIB per Capita: 56724.32 reais
+Exibição dos resultados das comparações entre as duas cartas.
 
-=== Carta 2 ===
-Estado: B
-Código: B02
-Nome da Cidade: Rio de Janeiro
-População: 6748000
-Área: 1200.25 km²
-PIB: 300.50 bilhões de reais
-Número de Pontos Turísticos: 30
-Densidade Populacional: 5622.24 hab/km²
-PIB per Capita: 44532.91 reais
-🚀 Como executar
+--------
 
-Compile o programa com um compilador C, por exemplo:
+Como compilar
+Use um compilador C, como gcc, para compilar o programa:
+
+nginx
+gcc super_trunfo_avancado.c -o super_trunfo
+
+Como executar
+Após a compilação, execute o programa:
 
 bash
-gcc super_trunfo_cidades.c -o super_trunfo
 
-Execute o programa:
-
-bash
 ./super_trunfo
 
-Siga as instruções no terminal para cadastrar os dados das cidades.
+Siga as instruções no terminal para inserir os dados de cada carta. O programa exibirá os cálculos e comparações automaticamente.
 
-Requisitos
-Linguagem: C (ANSI C)
-Nenhuma biblioteca externa necessária
-Recomendado usar compiladores como gcc ou clang
+Observações
+Os cálculos consideram conversão do PIB para reais (multiplicado por 1.000.000.000)
+A densidade populacional é usada de forma inversa no cálculo do Super Poder (quanto menor, melhor)
+O programa mantém todas as funcionalidades dos níveis básico e intermediário.
 
-Aprendizado
-
-Entrada e saída de dados em C
-Tipos primitivos (char, int, float)
-Cálculo de métricas com variáveis
-Organização básica de programas em C
