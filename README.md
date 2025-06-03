@@ -26,7 +26,7 @@ Este programa em C simula um jogo de cartas do tipo "Super Trunfo", onde cada ca
 
 - Exibição dos resultados das comparações entre as duas cartas.
 
-**## Observações**
+## Observações
 - Observações
 - Os cálculos consideram a conversão do PIB para reais (multiplicando por 1.000.000.000)
 - A densidade populacional é usada de forma inversa no cálculo do Super Poder (quanto menor, melhor)
