@@ -1,44 +1,46 @@
-# Super Trunfo das Cidades
+# Super Trunfo - Países | Nível Mestre
 
-Este programa em C simula um jogo de cartas do tipo "Super Trunfo", onde cada carta representa uma cidade com atributos numéricos. No nível avançado, foram adicionadas funcionalidades como o cálculo do **Super Poder** da cidade e a **comparação entre cartas**.
+## Descrição
 
----
+Este programa em C implementa o cadastro e a comparação de cartas no jogo "Super Trunfo" com tema de países e cidades, conforme o desafio proposto pela MateCheck.
 
-## Funcionalidades
+No **Nível Mestre**, o programa:
 
-- Leitura dos dados de duas cartas com os seguintes atributos:
-  - Estado (caractere)
-  - Código (string)
-  - Nome da cidade (string)
-  - População (`unsigned long int`)
-  - Área (`float`)
-  - PIB em bilhões de reais (`float`)
-  - Número de pontos turísticos (`int`)
+- Permite cadastrar dados de duas cartas, cada uma representando uma cidade.
+- Cada carta possui os atributos:
+  - População (unsigned long int)
+  - Área (float)
+  - PIB (float)
+  - Número de pontos turísticos (int)
+- Calcula automaticamente os atributos adicionais:
+  - Densidade Populacional (População / Área)
+  - PIB per Capita (PIB / População)
+  - Super Poder: soma dos atributos (população, área, PIB, pontos turísticos, PIB per capita, e 1 / densidade populacional)
+- Compara atributo a atributo as duas cartas, mostrando qual venceu para cada um:
+  - Para Densidade Populacional, vence a carta com menor valor
+  - Para os demais atributos e o Super Poder, vence a carta com maior valor.
 
-- Cálculos automáticos:
-  - Densidade populacional (hab/km²)
-  - PIB per capita (R$ por habitante)
-  - Super Poder da carta (soma ponderada dos atributos)
-
-- Comparações:
-  - **População, Área, PIB, Pontos Turísticos, PIB per Capita, Super Poder** → vence quem tiver o maior valor
-  - **Densidade Populacional** → vence quem tiver o menor valor
-
-- Exibição dos resultados das comparações entre as duas cartas.
+O programa não utiliza estruturas de repetição ou condicionais (`for`, `while`, `if`, `else`), atendendo às especificações do desafio.
 
 ## Observações
-- Os cálculos consideram a conversão do PIB para reais (multiplicando por 1.000.000.000)
-- A densidade populacional é usada de forma inversa no cálculo do Super Poder (quanto menor, melhor)
-- O programa mantém todas as funcionalidades dos níveis básico e intermediário
+-O programa considera que todos os dados informados são válidos e não realiza validação de entrada
+-A fórmula do "Super Poder" inclui o inverso da densidade populacional para equilibrar seu impacto
+-A comparação das cartas é feita diretamente usando expressões lógicas, sem comandos condicionais explícitos.
 
 ---
 
-## Como compilar
+## Como usar
 
-Use um compilador C, como `gcc`, para compilar o programa:
+- Compile o programa com um compilador C, por exemplo:
 
-```bash
-gcc super_trunfo_avancado.c -o super_trunfo
+   ```bash
+   gcc -o supertrunfo mestre_supertrunfo.c
+./supertrunfo
 
-./super_trunfo
+## Insira os dados das duas cartas quando solicitado:
+- População (número inteiro grande)
 
+- Área (número decimal)
+- PIB (número decimal)
+- Número de pontos turísticos (inteiro)
+- O programa exibirá os resultados da comparação dos atributos e o "Super Poder" de cada carta, indicando qual carta venceu em cada atributo (1 para Carta 1 e 0 para Carta 2).
