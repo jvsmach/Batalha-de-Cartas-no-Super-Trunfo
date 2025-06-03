@@ -34,10 +34,10 @@ O programa não utiliza estruturas de repetição ou condicionais (`for`, `while
    bash  
    gcc -o supertrunfo mestre_supertrunfo.c
   
- - Execute o programa: 
+- Execute o programa: 
    ./supertrunfo
    
- - Insira os dados das duas cartas quando solicitado:
+- Insira os dados das duas cartas quando solicitado:
   - População (número inteiro grande)
   - Área (número decimal)
   - PIB (número decimal)
