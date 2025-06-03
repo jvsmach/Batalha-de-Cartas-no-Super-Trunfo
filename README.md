@@ -29,14 +29,20 @@ O programa não utiliza estruturas de repetição ou condicionais (`for`, `while
 
 ## Como usar
 
-Compile o programa com um compilador C, por exemplo:
+- Compile o programa com um compilador C, por exemplo:
 
-   bash
-  
+   bash  
    gcc -o supertrunfo mestre_supertrunfo.c
   
+ - Execute o programa: 
    ./supertrunfo
-
+   
+ - Insira os dados das duas cartas quando solicitado:
+  - População (número inteiro grande)
+  - Área (número decimal)
+  - PIB (número decimal)
+  - Número de pontos turísticos (inteiro)
+- O programa exibirá os resultados da comparação dos atributos e o "Super Poder" de cada carta, indicando qual carta venceu em cada atributo (1 para Carta 1 e 0 para Carta 2).
 
 
 
