@@ -28,7 +28,7 @@ Exibição dos resultados das comparações entre as duas cartas.
 
 --------
 
-Como compilar
+Como compilar:
 Use um compilador C, como gcc, para compilar o programa:
 
 nginx
